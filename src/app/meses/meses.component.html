@@ -1,0 +1,10 @@
+<h3>Listado de Meses:</h3>
+
+<button class="btn btn-danger m-1" (click)="borrar()">Borrar Último</button>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of meses; let i = index">
+      {{i+1}} - {{item}}
+  </li>
+</ul>
+

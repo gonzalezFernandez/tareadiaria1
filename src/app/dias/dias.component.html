@@ -1,0 +1,12 @@
+<h3>Listado de Días:</h3>
+
+
+<button class="btn btn-danger m-1" (click)="borrar()">Borrar Primero</button>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of dias; let i = index">
+       {{item}}
+  </li>
+</ul>
+
+

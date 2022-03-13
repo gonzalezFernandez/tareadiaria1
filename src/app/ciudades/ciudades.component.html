@@ -1,0 +1,19 @@
+<h3>Listado de Ciudades:</h3>
+
+<button class="btn btn-secondary m-1" (click)="mostrar()"> Mostrar ciudades</button>
+
+<button class="btn btn-danger m-1" (click)="borrar()">Borrar Último</button>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of ciudades; let i = index">
+      {{i+1}} - {{item}}
+  </li>
+</ul>
+
+<h5>Ciudades borradas:</h5>
+
+<ul class="list-group" >
+  <li class="list-group-item" *ngFor="let item of borradas; let i = index">
+      {{i+1}} - {{item}}
+  </li>
+</ul>

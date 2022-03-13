@@ -1,0 +1,10 @@
+<h3>Listado de Comidas:</h3>
+
+<button class="btn btn-secondary m-1" (click)="mostrar()"> Mostrar comidas</button>
+<button class="btn btn-danger m-1" (click)="borrar()">Borrar Todas</button>
+
+<ul class="list-group" >
+  <li class="list-group-item" *ngFor="let item of comidas; let i = index">
+      {{i+1}} - {{item}}
+  </li>
+</ul>
